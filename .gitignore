@@ -3,3 +3,7 @@ yolov8n.pt
 
 football-players-detection-1/
 detect/
+
+best.pt
+last.pt
+runs/

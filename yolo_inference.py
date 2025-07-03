@@ -1,6 +1,6 @@
 from ultralytics import YOLO 
 
-model = YOLO('yolo11x')
+model = YOLO('models/best.pt')
 # model.to('cuda')
 
 results = model.predict('input_videos/08fd33_4.mp4',save=True,device='0', stream=True)
