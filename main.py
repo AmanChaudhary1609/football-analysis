@@ -70,9 +70,10 @@ def main():
     # team_ball_control= np.array(team_ball_control)
 
 
-    # # Draw output 
-    # ## Draw object Tracks
+    # Draw output 
+    ## Draw object Tracks
     # output_video_frames = tracker.draw_annotations(video_frames, tracks,team_ball_control)
+    output_video_frames = tracker.draw_annotations(video_frames, tracks)
 
     # ## Draw Camera movement
     # output_video_frames = camera_movement_estimator.draw_camera_movement(output_video_frames,camera_movement_per_frame)
@@ -81,8 +82,8 @@ def main():
     # speed_and_distance_estimator.draw_speed_and_distance(output_video_frames,tracks)
 
     # Save video
-    # save_video(output_video_frames, 'output_videos/output_video.avi')
-    save_video(video_frames, 'output_videos/output_video.avi')
+    save_video(output_video_frames, 'output_videos/output_video.avi')
+   
 
 if __name__ == '__main__':
     main()

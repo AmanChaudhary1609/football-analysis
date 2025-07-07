@@ -7,3 +7,4 @@ detect/
 best.pt
 last.pt
 runs/
+__pycache__
